@@ -1,0 +1,19 @@
+#использованне локаторы
+"/html/body/div/div/header/nav/a/p" #кнопка личный кабинет
+"/html/body/div/div/main/div/div/p[1]/a" #кнопка зарегистрироваться
+"/html/body/div/div/main/div/form/fieldset[1]/div/div/input" #поле для введения имени
+"/html/body/div/div/main/div/form/fieldset[2]/div/div/input" #поле для введения логина
+"/html/body/div/div/main/div/form/fieldset[3]/div/div/input" #поле для введения пароля
+"/html/body/div/div/main/div/form/button" #кнопка зарегистрироваться
+"/html/body/div/div/main/div/h2" #текстовый элемент Вход
+"/html/body/div/div/main/div/form/fieldset[3]/div/p" #текст ошибки при написании не верного пароля
+"/html/body/div/div/main/section[2]/div/button" #кнопка оформить заказ
+"/html/body/div/div/main/div/div/p[2]/a" #кнопка восстановить пароль
+"/html/body/div/div/main/div/form/fieldset/div/div" #поле для ввода емейл в форме восстановления пароля
+"/html/body/div/div/main/div/form/button" #кнопка восстановить
+"/html/body/div/div/header/nav/ul/li[1]/a/p" #кнопка конструктор
+"/html/body/div/div/main/div/nav/ul/li[3]/button" # кнопка выход из личного кабинета
+"/html/body/div/div/main/section[1]/div[1]/div[1]/span" #переключатель булки в разделе конструктор
+"/html/body/div/div/main/section[1]/div[1]/div[3]/span"#переключатель соусы в разделе конструктор
+"/html/body/div/div/main/section[1]/div[1]/div[3]/span"#переключатель начинки в разделе конструктор
+
