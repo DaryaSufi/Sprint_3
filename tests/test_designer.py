@@ -12,15 +12,3 @@ class TestDesigner:
     def test_go_to_the_Filling_section(self,driver):
         driver.find_element(*Locators.BUTTON_FILLINGS).click()
         assert driver.find_element(*Locators.LIST_OF_FILLINGS)
-
-
-
-
-
-
-
-
-
-
-
-
