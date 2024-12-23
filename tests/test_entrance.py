@@ -2,16 +2,20 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from Locators import Locators
 from consants import Constants
+from faker import Faker
+faker = Faker()
 class TestEntrance:
     def test_log_in_using_the_Log_in_to_account_button_on_the_main_page_true(self,driver):
+        email = faker.email()
         driver.find_element(*Locators.BUTTON_ENTRANCE_TO_ACC).click()
-        driver.find_element(*Locators.INPUT_EMAIL_ENTRANCE).send_keys(*Constants.EMAIL)
+        driver.find_element(*Locators.INPUT_EMAIL_ENTRANCE).send_keys(email)
         driver.find_element(*Locators.INPUT_PASWWORD_ENTRANCE).send_keys(*Constants.PASSWORD)
         driver.find_element(*Locators.BUTTON_ENTRANCE).click()
         assert driver.find_element(*Locators.CHECKOUT_BUTTON)
     def test_log_in_via_the_Personal_account_button_true(self,driver):
+        email = faker.email()
         driver.find_element(Locators.BUTTON_PERS_ACC).click()
-        driver.find_element(*Locators.INPUT_EMAIL_ENTRANCE).send_keys(*Constants.EMAIL)
+        driver.find_element(*Locators.INPUT_EMAIL_ENTRANCE).send_keys(email)
         driver.find_element(*Locators.INPUT_PASWWORD_ENTRANCE).send_keys(*Constants.PASSWORD)
         driver.find_element(*Locators.BUTTON_ENTRANCE).click()
         assert driver.find_element(*Locators.CHECKOUT_BUTTON)

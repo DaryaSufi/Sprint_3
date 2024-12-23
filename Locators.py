@@ -3,8 +3,8 @@ from selenium.webdriver.common.by import By
 class Locators:
     BUTTON_PERS_ACC=(By.LINK_TEXT, "Личный Кабинет")
     LINK_REG=(By.XPATH, "//a[@class='Auth_link__1fOlj']")
-    INPUT_NAME=(By.XPATH,"//*[@id='root']/div/main/div/form/fieldset[1]/div/div/input")  #не смогла найти поиск по уникальному атрибуту, поэтому исплльзую нумерацию
-    INPUT_EMAIL=(By.XPATH, "//*[@id='root']/div/main/div/form/fieldset[2]/div/div/input") #не смогла найти поиск по уникальному атрибуту, поэтому исплльзую нумерацию
+    INPUT_NAME=(By.XPATH,"//label[@class='input__placeholder text noselect text_type_main-default']/following-sibling::input[1]")
+    INPUT_EMAIL=(By.XPATH, "//label[text()='Email']/following-sibling::input[1]")
     INPUT_PASSWORD=(By.XPATH, "//input[@class='text input__textfield text_type_main-default' and @type='password']")
     BUTTON_REG=(By.XPATH, "//button[@class='button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa']")
     BUTTON_ENTRANCE=(By.XPATH, "//button[@class='button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa']")
@@ -20,9 +20,9 @@ class Locators:
     TEXT_DESIGN_BURGER=(By.XPATH, "//h1[@class='text text_type_main-large mb-5 mt-10']")
     LOGO=(By.XPATH, "//div[@class='AppHeader_header__logo__2D0X2']")
     BUTTON_EXIT=(By.XPATH, "//button[@class='Account_button__14Yp3 text text_type_main-medium text_color_inactive']")
-    BUTTON_ROLLS = (By.LINK_TEXT, "Булки")
-    BUTTON_SAUCES = (By.LINK_TEXT, "Соусы")
-    BUTTON_FILLINGS = (By.LINK_TEXT, "Начинки")
-    LIST_OF_ROLLS = (By.LINK_TEXT, "Флюоресцентная булка")
-    LIST_OF_SAUCES = (By.LINK_TEXT, "Соус Spicy-X")
-    LIST_OF_FILLINGS = (By.LINK_TEXT, "Мясо бессмертных моллюсков Protostomia")
+    BUTTON_ROLLS = (By.XPATH, "//span[text()='Булки']")
+    BUTTON_SAUCES = (By.XPATH, "//span[text()='Соусы']")
+    BUTTON_FILLINGS = (By.XPATH, "//span[text()='Начинки']")
+    LIST_OF_ROLLS = (By.LINK_TEXT, "//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']/following-sibling::span[1][text()='Булки']")
+    LIST_OF_SAUCES = (By.LINK_TEXT, "//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']/following-sibling::span[1][text()='Соусы']")
+    LIST_OF_FILLINGS = (By.LINK_TEXT, "//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']/following-sibling::span[1][text()='Начинки']")

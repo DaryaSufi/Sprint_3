@@ -2,6 +2,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from Locators import Locators
 from consants import Constants
+
 class TestPersonalAccount:
     def test_click_through_to_the_Personal_account(self, driver):
         driver.find_element(*Locators.BUTTON_PERS_ACC).click()
